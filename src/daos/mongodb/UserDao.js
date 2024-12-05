@@ -1,5 +1,5 @@
 import MongoDao from "./MongoDao.js";
-import { User } from "../../models/mongo/User.js";
+import { User } from "./../mongodb/models/User.js";
 
 export default class UserDaoMongo extends MongoDao {
     constructor() {

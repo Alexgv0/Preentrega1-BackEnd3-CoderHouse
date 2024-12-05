@@ -1,5 +1,5 @@
 import MongoDao from "./MongoDao.js";
-import { Cart } from "../../models/mongo/Carts.js";
+import { Cart } from "./models/Carts.js";
 
 export default class CartsDaoMongo extends MongoDao {
     constructor() {

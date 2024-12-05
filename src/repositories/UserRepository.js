@@ -1,7 +1,8 @@
 import { userDao } from "../daos/persistence.js";
 import UserDTO from "../dtos/UserDTO.js";
+import GenericRepository from "./GenericRepository.js";
 
-export default class UserRepository {
+export default class UserRepository { //FIXME: extends GenericRepository
     constructor() {
         this.dao = userDao;
     }

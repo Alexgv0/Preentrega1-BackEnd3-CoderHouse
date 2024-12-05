@@ -20,6 +20,8 @@ export default class UserServices extends ClassServices {
                 age: userData?.age || null,
                 email: (userData?.email).toLowerCase() || null,
                 password: userData?.password ? hashPassword(userData.password) : null,
+                role: userData?.role || null,
+                pets: userData?.pets || []
             };
             if (!newUserData.email) {
                 throw new Error("No se creo el usuario porque no se reconoce el email del usuario");
